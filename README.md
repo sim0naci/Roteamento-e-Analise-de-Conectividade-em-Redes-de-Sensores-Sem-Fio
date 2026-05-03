@@ -1,0 +1,5 @@
+7. Conectividade de Vértices e ArestasEm teoria dos grafos, existe uma relação fundamental: a conectividade nunca pode ser maior do que o grau mínimo do grafo ($\kappa(G) \le \lambda(G) \le \delta_{min}$). No caso do seu arquivo teste.txt, o sensor 0 e o sensor 7 possuem apenas 2 conexões cada. Logo, se esses dois enlaces falharem, esses sensores ficam isolados. 
+
+O Coeficiente de Agrupamento ($CC$) é uma métrica que mede a probabilidade de dois vizinhos de um sensor também serem vizinhos entre si. Em redes de sensores, um $CC$ alto indica que a rede possui caminhos alternativos locais, o que aumenta a robustez se um nó falhar.  
+
+Se olharmos para o teste.txt:  Sensor 1 tem 3 vizinhos: 0, 2 e 3.  Conexões possíveis entre eles: (0,2), (0,3) e (2,3).No arquivo, existem as arestas: 0 2 3 e 2 3 2. (Ou seja, 2 conexões reais).  Cálculo: $\frac{2 \cdot 2}{3 \cdot (3 - 1)} = \frac{4}{6} \approx 0.67$.  
